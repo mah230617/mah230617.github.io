@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="Maíra Silva Edo">
+  <meta description="Melhor loja para os melhores pets!">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><!-- link CDN (Content Delivery Network) para bootstrap.min.css para não precisar enviar o arquivo pro repositório/servidor, busca online o arquivo -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleprodutos.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script> <!-- link CDN para bootstrap.min.js -->
+  <title>Loja Pet Mirelinda - Produtos</title>
+</head>
+
+<body>
+  <section>
+    <div class="container-fluid bg"> <!-- bg de BackGround = classe que define o background -->
+      <div class="bg-mask text-center"> <!-- bg-mask = classe que deixa a imagem de fundo mais transparente -->
+        <div class="row topmenu d-flex justify-content-center align-items-center"> <!-- topmenu = classe que define o menu superior -->
+          <div class="col-2 col-sm-1 col-md-1 col-xl-1 text-center">
+            <a href="index.html"><img src="images/Mirelinda-paw-removedbg.png" alt="logo pequena" class="logo"></a><!-- logo = classe que define as propriedades da logo pequena da loja, no menu superior esquero -->
+          </div>
+          <div class="col-10 col-sm-11 col-md-11 col-xl-11 text-end">
+            <a href="produtos.html"><button type="button" class="btn btn-dark btn-dark-hover border tracking-lettering my-2">Produtos</button></a> <!-- tracking-lettering = classe que aumenta o espaçamento entre as letras -->
+            <a href="clientes.html"><button type="button" class="btn btn-dark btn-dark-hover border tracking-lettering my-2 ms-1">Clientes</button></a>
+            <a href="contato.html"><button type="button" class="btn btn-dark btn-dark-hover border tracking-lettering my-2 ms-1">Contato</button></a>
+            <a href="fotos.html"><button type="button" class="btn btn-dark btn-dark-hover border tracking-lettering my-2 ms-1">Pets!</button></a>
+            <a href="quemsoueu.html"><button type="button" class="btn btn-dark btn-dark-hover border tracking-lettering my-2 ms-1">Quem?</button></a>
+            <a href="trabalheconosco.html"><button type="button" class="btn btn-dark btn-dark-hover border tracking-lettering my-2 ms-1">Trabalhe Conosco</button></a>
+            <a href="https://wa.me/5511942451212"><button type="button" class="btn btn-dark btn-dark-hover border ms-1 fixedsize"><img src="images/interrogacao-removebg-preview.png" alt="carrinho de compras" class="shoppingcart"></button></a> <!-- fixedsize = classe que define a largura do carrinho de compras para max width 992px // shoppingcart = classe que define a largura da imagem do carrinho de compras -->
+          </div>
+        </div>
+        <div class="row hrow text-center"> <!-- hrow (highrow -> linha alta) = define caracteristicas do corpo da página -->
+          <div class="col-12 col-sm-6 col-md-5 col-xl-3 product"> <!-- product = classe que define o fundo mais escuro atrás de cada produto -->
+            <div id="carouselArranhador" class="carousel slide carousel-dark">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="productimages/arranhador1.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/arranhador2.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/arranhador3.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselArranhador"
+                data-bs-slide="prev"> <!-- carousel-control-btn = classe que define propriedades do botão para mudar a imagem, deixando-a mais visível -->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselArranhador"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p class="productname">Arranhador</p>
+            <p class="price">R$70,00</p>
+            <a href="https://wa.me/5511942451212"><input type="submit" value="Comprar" class="btn btn-success"></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#arranhador">
+              Detalhes
+            </button>
+            <div class="modal fade" id="arranhador" tabindex="-1" role="dialog" aria-labelledby="arranhadorModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="arranhadorModalLabel">Detalhes do Arranhador</h5>
+                  </div>
+                  <div class="modal-body">
+                    Arranhador em coluna. Combate o estresse. Indicado para gatos de todas as idades. Possui uma base de 25cm x 25cm e uma altura de 40cm, e peso de 1kg.
+                    <div class="modal-img"><img src="productimages/arranhador3.jpg" alt="" class="m-2"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-5 col-xl-3 product">
+            <div id="carouselTorre" class="carousel slide carousel-dark">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="productimages/torre1.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/torre2.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/torre3.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselTorre" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselTorre" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p class="productname">Torre</p>
+            <p class="price">R$250,00</p>
+            <a href="https://wa.me/5511942451212"><input type="submit" value="Comprar" class="btn btn-success"></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#torre">
+              Detalhes
+            </button>
+            <div class="modal fade" id="torre" tabindex="-1" role="dialog" aria-labelledby="torreModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="torreModalLabel">Detalhes de Torre</h5>
+                  </div>
+                  <div class="modal-body">
+                    Torre de arranhador em coluna, com dois andares. Combate o estresse. Indicado para gatos de todas as idades. Possui uma base de 25cm x 25 cm e uma altura de 50cm, e peso de 1,5kg.
+                    <div class="modal-img"><img src="productimages/torre1.jpg" alt=""></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-5 col-xl-3 product">
+            <div id="carouselRatinho" class="carousel slide carousel-dark">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="productimages/ratinho1.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/ratinho2.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/ratinho3.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselRatinho"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselRatinho"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p class="productname">Ratinho de Brinquedo</p>
+            <p class="price">R$8,00</p>
+            <a href="https://wa.me/5511942451212"><input type="submit" value="Comprar" class="btn btn-success"></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ratinho">
+              Detalhes
+            </button>
+            <div class="modal fade" id="ratinho" tabindex="-1" role="dialog" aria-labelledby="ratinhoModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ratinhoModalLabel">Detalhes do Ratinho de Brinquedo</h5>
+                  </div>
+                  <div class="modal-body">
+                    Ratinho de brinquedo, com guizo em seu interior. Combate o estresse. Indicado para gatos de todas as idades. Tamanho de aproximadamente 10cm e peso de 50g. Cores disponíveis: branca, preta, laranja, cinza, azul claro, azul escuro.
+                    <div class="modal-img"><img src="productimages/ratinho1.jpg" alt=""></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-5 col-xl-3 product">
+            <div id="carouselBebedouro" class="carousel slide carousel-dark">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="productimages/bebedouro1.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/bebedouro2.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/bebedouro3.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselBebedouro"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselBebedouro"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p class="productname">Bebedouro</p>
+            <p class="price">R$120,00</p>
+            <a href="https://wa.me/5511942451212"><input type="submit" value="Comprar" class="btn btn-success"></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bebedouro">
+              Detalhes
+            </button>
+            <div class="modal fade" id="bebedouro" tabindex="-1" role="dialog" aria-labelledby="bebedouroModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="bebedouroModalLabel">Detalhes do Bebedouro</h5>
+                  </div>
+                  <div class="modal-body">
+                    Bebedouro em forma de flor, com fonte e filtro, para seu pet beber água limpa e fresquinha! Indicado para gatos de todas as idades. Tamanho de aproximadamente 20cm x 20xm e altura de 20cm e peso de 250g. Recipiente disponível apenas na cor branca. Cores disponíveis para a parte interna da fonte (abaixo da flor): verde, azul, rosa.
+                    <div class="modal-img"><img src="productimages/bebedouro1.jpg" alt=""></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-5 col-xl-3 product">
+            <div id="carouselCaixaAreia" class="carousel slide carousel-dark">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="productimages/caixaareia1.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/caixaareia2.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/caixaareia3.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselCaixaAreia"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselCaixaAreia"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p class="productname">Caixa de Areia</p>
+            <p class="price">R$60,00</p>
+            <a href="https://wa.me/5511942451212"><input type="submit" value="Comprar" class="btn btn-success"></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#caixaDeAreia">
+              Detalhes
+            </button>
+            <div class="modal fade" id="caixaDeAreia" tabindex="-1" role="dialog" aria-labelledby="caixaDeAreiaModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="caixaDeAreiaModalLabel">Detalhes da Caixa de Areia</h5>
+                  </div>
+                  <div class="modal-body">
+                    Caixa de areia para a higiene do seu gato! Tamanho de aproximadamente 20cm x 20xm e altura de 8cm e peso de 150g. Diponível nas cores: verde, azul, rosa, preto, branco.
+                    <div class="modal-img"><img src="productimages/bebedouro1.jpg" alt=""></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-5 col-xl-3 product">
+            <div id="carouselMochila" class="carousel slide carousel-dark">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="productimages/mochila3.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/mochila2.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/mochila1.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselMochila"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselMochila"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p class="productname">Mochila de Transporte</p>
+            <p class="price">R$250,00</p>
+            <a href="https://wa.me/5511942451212"><input type="submit" value="Comprar" class="btn btn-success"></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mochila">
+              Detalhes
+            </button>
+            <div class="modal fade" id="mochila" tabindex="-1" role="dialog" aria-labelledby="mochilaModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="mochilaModalLabel">Detalhes da Mochila</h5>
+                  </div>
+                  <div class="modal-body">
+                    Mochila para transporte do seu pet! Possui janelas para que seu pet possa visualizar o exterior, tranquilizando-o. Tamanho aproximado: largura 30cm x profundidade 20cm e altura de 40cm. Peso aproximado de 300g. Diponível nas cores: amarela, cinza, azul.
+                    <div class="modal-img"><img src="productimages/mochila1.jpg" alt=""></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="col-12 col-sm-6 col-md-5 col-xl-3 product custom-product-height"> <!-- custom-product-height = classe que define o fundo mais escuro atrás dos últimos 6 produtos -->
+            <div id="carouselCamaJanela" class="custom-carousel-item-height carousel slide carousel-dark"> <!-- custom-carousel-item-height = classe que define a altura do carousel-item para os últimos 6 produtos -->
+              <div class="carousel-inner custom-carousel-inner"> <!-- custom-carousel-inner = classe que define o tamanho do carrossel, para possibilitar que os botões de "Compra" e "Detalhes" sejam clicáveis -->
+                <div class="carousel-item active">
+                  <img src="productimages/camajanela1.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/camajanela2.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/camajanela3.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselCamaJanela"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselCamaJanela"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p class="productname">Cama de Janela</p>
+            <p class="price">R$150,00</p>
+            <a href="https://wa.me/5511942451212"><input type="submit" value="Comprar" class="btn btn-success"></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#camaJanela">
+              Detalhes
+            </button>
+            <div class="modal fade" id="camaJanela" tabindex="-1" role="dialog" aria-labelledby="camaJanelaModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="camaJanelaModalLabel">Detalhes da Cama de Janela</h5>
+                  </div>
+                  <div class="modal-body">
+                    Cama de Janela com fixação através de ventosas. Indicado para gatos de todas as idades. Tamanho aproximado: largura 30cm x altura 20cm. Peso aproximado: 150g. Diponível nas cores: cinza e bege.
+                    <div class="modal-img"><img src="productimages/camajanela1.jpg" alt=""></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-5 col-xl-3 product custom-product-height">
+            <div id="carouselCasinha" class="carousel slide carousel-dark custom-carousel-item-height">
+              <div class="carousel-inner custom-carousel-inner">
+                <div class="carousel-item active">
+                  <img src="productimages/casinha2.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/casinha3.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/casinha1.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselCasinha"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselCasinha"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p class="productname">Casinha</p>
+            <p class="price">R$200,00</p>
+            <a href="https://wa.me/5511942451212"><input type="submit" value="Comprar" class="btn btn-success"></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#casinha">
+              Detalhes
+            </button>
+            <div class="modal fade" id="casinha" tabindex="-1" role="dialog" aria-labelledby="casinhaModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="casinhaModalLabel">Detalhes da Casinha</h5>
+                  </div>
+                  <div class="modal-body">
+                    Casinha de brinquedo para pets. Seu gatinho se sentirá seguro nela! Indicado para gatos de todas as idades. Tamanho aproximado: largura 40cm x altura 40cm x 30cm profundidade . Peso aproximado: 1kg. Diponível na apenas na cor branca.
+                    <div class="modal-img"><img src="productimages/casinha1.jpg" alt=""></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-5 col-xl-3 product custom-product-height">
+            <div id="carouselComedouro" class="carousel slide carousel-dark custom-carousel-item-height">
+              <div class="carousel-inner custom-carousel-inner">
+                <div class="carousel-item active">
+                  <img src="productimages/comedouro2.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/comedouro1.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/comedouro3.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselComedouro"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselComedouro"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p class="productname">Vasilhas</p>
+            <p class="price">R$150,00</p>
+            <a href="https://wa.me/5511942451212"><input type="submit" value="Comprar" class="btn btn-success"></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vasilhas">
+              Detalhes
+            </button>
+            <div class="modal fade" id="vasilhas" tabindex="-1" role="dialog" aria-labelledby="vasilhasModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="vasilhasModalLabel">Detalhes de Vasilhas</h5>
+                  </div>
+                  <div class="modal-body">
+                    Vasilhas transparentes para ração e água elevadas, trazendo mais conforto no momento da alimentação e hidratação do seu pet. Indicado para gatos de todas as idades. Tamanho aproximado: largura 20cm x altura 30cm x 20cm profundidade . Peso aproximado: 1kg. Suporte das vasilhas disponível nas cores: azul, verde, rosa.
+                    <div class="modal-img"><img src="productimages/comedouro1.jpg" alt=""></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-5 col-xl-3 product custom-product-height">
+            <div id="carouselComedouroEletronico" class="carousel slide carousel-dark custom-carousel-item-height">
+              <div class="carousel-inner custom-carousel-inner">
+                <div class="carousel-item active">
+                  <img src="productimages/comedouroeletronico1.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/comedouroeletronico2.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/comedouroeletronico3.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselComedouroEletronico"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselComedouroEletronico"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p class="productname">Comedouro Eletrônico</p>
+            <p class="price">R$400,00</p>
+            <a href="https://wa.me/5511942451212"><input type="submit" value="Comprar" class="btn btn-success"></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comedouro">
+              Detalhes
+            </button>
+            <div class="modal fade" id="comedouro" tabindex="-1" role="dialog" aria-labelledby="comedouroModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="comedouroModalLabel">Detalhes de Comedouro Eletrônico</h5>
+                  </div>
+                  <div class="modal-body">
+                    Comedouro eletrônico. Ideal para tutores que costumam passar várias horas fora de casa ou viajando, ou ainda para aquele pet que demanda uma alimentação mais controlada. É possível programar os horários da disponibilização da ração para o seu pet. Indicado para gatos de todas as idades. Tamanho aproximado: largura 20cm x altura 35cm x 20cm profundidade . Peso aproximado: 1kg. Disponível apenas na cor branca.
+                    <div class="modal-img"><img src="productimages/comedouroeletronico1.jpg" alt=""></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-5 col-xl-3 product custom-product-height">
+            <div id="carouselCaixaTransporte" class="carousel slide carousel-dark custom-carousel-item-height">
+              <div class="carousel-inner custom-carousel-inner">
+                <div class="carousel-item active">
+                  <img src="productimages/caixatransporte1.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/caixatransporte2.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/caixatransporte3.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselCaixaTransporte"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselCaixaTransporte"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p class="productname">Caixa de Transporte</p>
+            <p class="price">R$130,00</p>
+            <a href="https://wa.me/5511942451212"><input type="submit" value="Comprar" class="btn btn-success"></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#caixaTransporte">
+              Detalhes
+            </button>
+            <div class="modal fade" id="caixaTransporte" tabindex="-1" role="dialog" aria-labelledby="caixaTransporteModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="caixaTransporteModalLabel">Detalhes de Caixa de Transporte</h5>
+                  </div>
+                  <div class="modal-body">
+                    Caixa para transportar de forma segura seu pet! Possui alça para carregar e trava de segurança, porta em forma de grade, facilitando para que seu pet tenha visão do exterior. Desenvolvida em material resistente e duradouro, possui tamanhos P, M e G. O peso varia de acordo com o tamanho da caixa. Disponível nas cores: cinza, verde, roxo, azul, e preto.
+                    <div class="modal-img"><img src="productimages/caixatransporte1.jpg" alt=""></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-5 col-xl-3 product custom-product-height">
+            <div id="carouselPeixe" class="carousel slide carousel-dark custom-carousel-item-height">
+              <div class="carousel-inner custom-carousel-inner">
+                <div class="carousel-item active">
+                  <img src="productimages/peixe1.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/peixe2.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="productimages/peixe3.jpg" class="d-block mx-auto my-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselPeixe" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselPeixe" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p class="productname">Peixe de Brinquedo</p>
+            <p class="price">R$20,00</p>
+            <a href="https://wa.me/5511942451212"><input type="submit" value="Comprar" class="btn btn-success"></a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#peixe">
+              Detalhes
+            </button>
+            <div class="modal fade" id="peixe" tabindex="-1" role="dialog" aria-labelledby="peixeModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="peixeModalLabel">Detalhes de Peixe de Brinquedo</h5>
+                  </div>
+                  <div class="modal-body">
+                    Peixe de pelúcia de brinquedo, com movimento imitando um peixe fora d'água. Indicado para todas as idades. Tamanho aproximado: 15cm. Peso aproximado: 80g. Disponível nas cores: cinza, verde, roxo, azul e laranja.
+                    <div class="modal-img"><img src="productimages/peixe1.jpg" alt=""></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-secondary" href="index.html">Voltar para página principal</a><br><br><br>
+      </div>
+      <footer class="footer"><p>&copy; 2023, Maíra Silva Edo. Todos os direitos reservados. Imagens obtidas gratuitamente:&nbsp;<a href="https://depositphotos.com/br/free-files-all.html" target="_blank">DepositPhotos</a>.</p></footer> <!-- footer = classe que define as propriedades do footer -->
+    </div>
+  </section>
+</body>
+
+</html>
+
+<!-- imagens dos produtos foram gratuitamente retiradas de https://depositphotos.com/br/free-files-all.html -->

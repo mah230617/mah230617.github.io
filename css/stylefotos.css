@@ -1,0 +1,56 @@
+.hrow{
+    margin: 0;
+    /* height: 100vh; */
+}
+
+.pagebody{
+    margin: auto;
+    padding: 1rem;
+}
+
+.img{
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: .6rem;
+}
+
+.img1{
+    width: 60vw;
+}
+
+.img2{
+    height: 45vh;
+}
+
+.img3{
+    height: 45vh;
+}
+
+.img4{
+    height: 45vh;
+}
+
+@media screen and (max-width: 992px){
+    .pagebody{
+        margin: auto;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .img1{
+        width: 85vw;
+    }
+    
+    .img2{
+        height: 27vh;
+    }
+    
+    .img3{
+        height: 28vh;
+    }
+    
+    .img4{
+        height: 28vh;
+    }
+}

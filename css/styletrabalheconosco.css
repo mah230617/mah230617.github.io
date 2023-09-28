@@ -1,0 +1,38 @@
+.hrow{
+    margin: 0;
+}
+
+.pagebody{
+    margin: auto 35%;
+}
+
+.custom-fieldset{
+    border: 1px solid #b6b6b6;
+}
+
+.divbuttons{
+    font-size: 8rem;
+    text-align: center;
+    height: 6rem;
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px){
+    .pagebody{
+        margin: auto 20%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .pagebody{
+        margin: 2vh 8vw;
+        height: 100%;
+    }
+    
+    .custom-fieldset{
+        font-size: 1.2rem;
+    } 
+}
