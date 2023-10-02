@@ -9,6 +9,23 @@
     text-shadow: 2px 2px 2px gray;
 }
 
+.link{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    background-color: black;
+    /* opacity: .6; */
+    width: fit-content;
+    padding: .8rem;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.link a{
+    /* text-decoration: none; */
+    color: white;
+}
+
 .subtitle{
     text-align: center;
     color: white;
