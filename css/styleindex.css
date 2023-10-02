@@ -9,12 +9,15 @@
     text-shadow: 2px 2px 2px gray;
 }
 
+.biglogo{
+    width: 20%;
+}
+
 .direction{
     text-align: center;
     color: white;
     font-size: 2rem;
     background-color: black;
-    /* opacity: .6; */
     width: fit-content;
     padding: .8rem;
     margin: 0 auto;
@@ -35,6 +38,22 @@
     padding: .8rem;
     margin: 3px auto;
     border-radius: 5px;
+}
+
+.explanation{
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    background-color: black;
+    opacity: .4;
+    width: 40%;
+    padding: .5rem;
+    margin: 3px auto;
+    border-radius: 5px; 
+}
+
+.explanation a{
+    color: white;
 }
 
 @media screen and (max-width: 992px){
